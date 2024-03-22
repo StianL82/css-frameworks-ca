@@ -10,48 +10,78 @@
       src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     ></script>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-light mb-5">
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-custom-grey mb-5">
         <div class="container">
           <a class="navbar-brand" href="#">
             <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
           </a>
-            <button class="btn btn-outline-success" type="submit">
+            <button class="btn btn-outline-warning" type="submit">
               View Profile
             </button>
           </div>
         </div>
       </nav>
-    <!-- Form for å opprette en ny post -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 border">
-          <img src="" alt="">
-        </div>
-        <div class="col-md-8 border">
-          <form>
-            <div class="form-group">
-              <label for="postTitle">Post Title</label>
-              <input
-                type="text"
-                class="form-control"
-                id="postTitle"
-                placeholder="Enter post title"
-              />
+    <main>
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-8">
+            <div class="container border mb-4 bg-info2">
+              <div class="row">
+                <h2 class="text-center my-3"> Latest Posters</h2>
+                <div class="col-12 d-flex justify-content-center">
+                  <div class="m-2">
+                    <img src="../images/profile_pic_1.png" alt="">
+                    <p class="text-center">heisann</p>
+                  </div>
+                  <div class="m-2">
+                    <img src="../images/profile_pic_2.png" alt="">
+                    <p class="text-center">heisann</p>
+                  </div>
+                  <div class="m-2">
+                    <img src="../images/profile_pic_3.png" alt="">
+                    <p class="text-center">heisann</p>
+                  </div>
+                  <div class="m-2">
+                    <img src="../images/profile_pic_4.png" alt="">
+                    <p class="text-center">heisann</p>
+                  </div>
+                  <div class="m-2">
+                    <img src="../images/profile_pic_5.png" alt="">
+                    <p class="text-center">heisann</p>
+                  </div>
+                  <div class="m-2">
+                    <img src="../images/profile_pic_6.png" alt="">
+                    <p class="text-center">heisann</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="form-group">
-              <label for="postContent">Post Content</label>
-              <textarea
-                class="form-control"
-                id="postContent"
-                rows="3"
-                placeholder="Enter post content"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Create Post</button>
-          </form>
+
+            <form class="border mb-4 bg-info">
+              <div class="form-group">
+                <label for="postTitle">Post Title</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="postTitle"
+                  placeholder="Enter post title"
+                />
+              </div>
+              <div class="form-group">
+                <label for="postContent">Post Content</label>
+                <textarea
+                  class="form-control"
+                  id="postContent"
+                  rows="3"
+                  placeholder="Enter post content"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Create Post</button>
+            </form>
+
+          <!-- Søkefelt -->
           <div class="row">
-                    <!-- Søkefelt -->
             <div class="col-md-6 mb-4">
               <input type="text" class="form-control" placeholder="Search" />
             </div>
@@ -63,69 +93,120 @@
               </select>
             </div>
           </div>
-          <div class="col-md-12 mb-4">
-            <div class="card">
-              <img src="thumbnail1.jpg" class="card-img-top" alt="Thumbnail 1" />
-              <div class="card-body">
-                <h5 class="card-title">Post Title 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 mb-4">
-            <div class="card">
-              <img src="thumbnail1.jpg" class="card-img-top" alt="Thumbnail 1" />
-              <div class="card-body">
-                <h5 class="card-title">Post Title 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 mb-4">
-            <div class="card">
-              <img src="thumbnail1.jpg" class="card-img-top" alt="Thumbnail 1" />
-              <div class="card-body">
-                <h5 class="card-title">Post Title 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 mb-4">
-            <div class="card">
-              <img src="thumbnail1.jpg" class="card-img-top" alt="Thumbnail 1" />
-              <div class="card-body">
-                <h5 class="card-title">Post Title 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 mb-4">
-            <div class="card">
-              <img src="thumbnail1.jpg" class="card-img-top" alt="Thumbnail 1" />
-              <div class="card-body">
-                <h5 class="card-title">Post Title 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
 
+          <div class="col-md-12 mb-4">
+            <div class="card mb-4 bg-info">
+                <div class="row">
+                <div class="col-md-3"><img src="../images/Latest_post_1.png" class="card-img-top p-3" alt="Thumbnail 1" /></div>
+                <div class="card-body col-md-9">
+                  <div class="d-flex-column align-center border">
+                    <h5 class="card-title">Post Title 1</h5>
+                    <p class="card-text">
+                      Some quick example text to build on the card title and make up
+                      the bulk of the card's content.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              </div>
+              <div class="card mb-4">
+                <div class="row">
+                <div class="col-md-3"><img src="../images/Latest_post_1.png" class="card-img-top p-3" alt="Thumbnail 1" /></div>
+                <div class="card-body col-md-9">
+                  <h5 class="card-title">Post Title 1</h5>
+                  <p class="card-text">
+                    Some quick example text to build on the card title and make up
+                    the bulk of the card's content.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-4">
+              <div class="row">
+              <div class="col-md-3"><img src="../images/Latest_post_1.png" class="card-img-top p-3" alt="Thumbnail 1" /></div>
+              <div class="card-body col-md-9">
+                <h5 class="card-title">Post Title 1</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="row">
+              <div class="col-md-3"><img src="../images/Latest_post_1.png" class="card-img-top p-3" alt="Thumbnail 1" /></div>
+              <div class="card-body col-md-9">
+                <h5 class="card-title">Post Title 1</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="row">
+              <div class="col-md-3"><img src="../images/Latest_post_1.png" class="card-img-top p-3" alt="Thumbnail 1" /></div>
+              <div class="card-body col-md-9">
+                <h5 class="card-title">Post Title 1</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+              </div>
+            </div>
+          <div class="card mb-4">
+            <div class="row">
+              <div class="col-md-3"><img src="../images/Latest_post_1.png" class="card-img-top p-3" alt="Thumbnail 1" /></div>
+              <div class="card-body col-md-9">
+                <h5 class="card-title">Post Title 1</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="row">
+            <div class="col-md-3"><img src="../images/Latest_post_1.png" class="card-img-top p-3" alt="Thumbnail 1" /></div>
+            <div class="card-body col-md-9">
+              <h5 class="card-title">Post Title 1</h5>
+              <p class="card-text">
+                Some quick example text to build on the card title and make up
+                the bulk of the card's content.
+              </p>
+            </div>
+          </div>
+          </div>
+          <div class="card mb-4">
+            <div class="row">
+              <div class="col-md-3"><img src="../images/Latest_post_1.png" class="card-img-top p-3" alt="Thumbnail 1" /></div>
+              <div class="card-body col-md-9">
+                <h5 class="card-title">Post Title 1</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up
+                  the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <div class="row">
+              <div class="col-md-3"><img src="../images/Latest_post_1.png" class="card-img-top p-3" alt="Thumbnail 1" /></div>
+              <div class="card-body col-md-9">
+                <h5 class="card-title">Post Title 1</h5>
+                <p class="card-text">
+                    Some quick example text to build on the card title and make up
+                    the bulk of the card's content.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </main>
   </body>
 </html>

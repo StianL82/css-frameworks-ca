@@ -1,10 +1,26 @@
-//My Changes to the Bootstrap CSS
+/*---------- My Changes to the Bootstrap CSS ----------*/
 
 $gray-900: #605D5D;
 
+// scss-docs-start theme-color-variables
+$info: #D9D0BF;
+$dark: #303531;
+$info2: #A67F68;
+$custom-grey: #605D5D;
+$warning: #E4970B;
+// scss-docs-end theme-color-variables
 
+// scss-docs-start theme-colors-map
+$theme-colors: (
+  "info":       $info,
+  "warning":    $warning,
+  "dark":       $dark,
+  "info2":      $info2,
+  "custom-grey": $custom-grey,
+);
+// scss-docs-end theme-colors-map
 
-//My Imports
+/*---------- My Imports ----------*/
 
 @import "../../node_modules/bootstrap/scss/functions";
 @import "variables";
@@ -14,3 +30,6 @@ $gray-900: #605D5D;
 @import "../../node_modules/bootstrap/scss/utilities";
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+/*---------- My custom CSS ----------*/
