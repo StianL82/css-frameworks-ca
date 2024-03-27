@@ -7,6 +7,7 @@ $info: #D9D0BF;
 $dark: #303531;
 $info2: #A67F68;
 $custom-grey: #605D5D;
+$custom-light-grey: #e6e5e5;
 $warning: #E4970B;
 // scss-docs-end theme-color-variables
 
@@ -16,7 +17,8 @@ $theme-colors: (
   "warning":    $warning,
   "dark":       $dark,
   "info2":      $info2,
-  "custom-grey": $custom-grey,
+  "custom-grey": $custom-grey,  
+  "custom-light-grey": $custom-light-grey,
 );
 // scss-docs-end theme-colors-map
 
@@ -34,6 +36,6 @@ $theme-colors: (
 
 /*---------- My custom CSS ----------*/
 
-.profile-pic {
+.profile-pic, .card-img-top {
   width: 60%;
 }
