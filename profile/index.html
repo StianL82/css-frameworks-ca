@@ -10,122 +10,213 @@
       src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
     ></script>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-custom-grey mb-5">
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-custom-grey">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="/docs/5.2/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+            <h1 class="h1-logo">YourAwesome</h1>
           </a>
-            <button class="btn btn-outline-success" type="submit">
-              View Profile
-            </button>
+          <a class="btn btn-outline-warning" href="../feed/index.html">
+            Back to Feed
+        </a>
           </div>
         </div>
       </nav>
-    <!-- Form for å opprette en ny post -->
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 border">
-          <img src="" alt="">
+    <main>
+      <div class="container">
+        <div class="col-md-10">
+          <img src="../images/profile-hero.png" class="img-fluid" alt="profile hero picture">
         </div>
-        <div class="col-md-8 border">
-          <form>
-            <div class="form-group">
-              <label for="postTitle">Post Title</label>
-              <input
-                type="text"
-                class="form-control"
-                id="postTitle"
-                placeholder="Enter post title"
-              />
-            </div>
-            <div class="form-group">
-              <label for="postContent">Post Content</label>
-              <textarea
-                class="form-control"
-                id="postContent"
-                rows="3"
-                placeholder="Enter post content"
-              ></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Create Post</button>
-          </form>
-          <div class="row">
-                    <!-- Søkefelt -->
-            <div class="col-md-6 mb-4">
-              <input type="text" class="form-control" placeholder="Search" />
-            </div>
-                    <!-- Sorteringsalternativer -->
-            <div class="col-md-6 mb-4">
-              <select class="form-control">
-                <option>Sort by Date</option>
-                <option>Sort by Popularity</option>
-              </select>
-            </div>
-          </div>
-          <div class="col-md-12 mb-4">
-            <div class="card">
-              <img src="thumbnail1.jpg" class="card-img-top" alt="Thumbnail 1" />
-              <div class="card-body">
-                <h5 class="card-title">Post Title 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4 bg-info2">
+                  <div class="d-flex justify-content-around mt-3">
+                    <a href="#"><img src="../images/home_icon.png" class="icon" alt="settings icon"></a>
+                    <a href="#"><img src="../images/friends_icon.png" class="icon" alt="settings icon"></a>
+                    <a href="#"><img src="../images/friend_icon.png" class="icon" alt="settings icon"></a>
+                    <a href="#"><img src="../images/settings_icon.png" class="icon" alt="settings icon"></a>
+                  </div>
+                  <div class="d-flex justify-content-center mb-2">
+                    <img src="../images/profile_me_large.png" class="img-fluid profile-picture mt-3" alt="Profile Image">
+                  </div>
+                  <div class="text-center text-white">
+                    <h4>Stian Lilleng</h4>
+                    <h5>98 Posts</h5>
+                    <h5>Joined: 248 days ago</h5>
+                  </div>
+                  <div><button type="submit" class="btn btn-success m-3 mx-auto d-block">Follow</button></div>
               </div>
-            </div>
-          </div>
-          <div class="col-md-12 mb-4">
-            <div class="card">
-              <img src="thumbnail1.jpg" class="card-img-top" alt="Thumbnail 1" />
-              <div class="card-body">
-                <h5 class="card-title">Post Title 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 mb-4">
-            <div class="card">
-              <img src="thumbnail1.jpg" class="card-img-top" alt="Thumbnail 1" />
-              <div class="card-body">
-                <h5 class="card-title">Post Title 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 mb-4">
-            <div class="card">
-              <img src="thumbnail1.jpg" class="card-img-top" alt="Thumbnail 1" />
-              <div class="card-body">
-                <h5 class="card-title">Post Title 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-12 mb-4">
-            <div class="card">
-              <img src="thumbnail1.jpg" class="card-img-top" alt="Thumbnail 1" />
-              <div class="card-body">
-                <h5 class="card-title">Post Title 1</h5>
-                <p class="card-text">
-                  Some quick example text to build on the card title and make up
-                  the bulk of the card's content.
-                </p>
-              </div>
-            </div>
-          </div>
+              <div class="col-md-8 ps-4 pe-0">
 
+                <h3 class="text-white text-center mt-3">Add new Post</h3>
+                <form class="border mt-2 mb-4 bg-info">
+                  <div class="form-group m-2">
+                    <label for="postTitle">Post Title</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="postTitle"
+                      placeholder="Enter post title"
+                    />
+                  </div>
+                  <div class="form-group m-2">
+                    <label for="postContent">Post Content</label>
+                    <textarea
+                      class="form-control"
+                      id="postContent"
+                      rows="3"
+                      placeholder="Enter post content"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-warning m-3 mx-auto d-block">Create Post</button>
+                </form>
+
+                <div class="col-md-12 mb-4">
+                  <h3 class="text-white text-center mt-3">Latest Posts</h3>
+                  <div class="card mb-4 bg-info">
+                      <div class="row">
+                      <div class="col-md-3 d-flex flex-column align-items-center justify-content-center"><img src="../images/profile_me_med.png" class="p-3 pb-0" alt="Profile Image" />
+                      <p class="text-center">StianL-82</p></div>
+                      <div class="card-body col-md-9 d-flex align-items-stretch">
+                        <div class="d-flex-column border border-dark rounded-2 m-2 ms-0 bg-custom-light-grey">
+                          <h5 class="card-title mb-3 p-2">Laundry Day Lamentations: The Sock Thief Strikes Again</h5>
+                          <p class="card-text p-2">
+                            Just finished folding my laundry when I realized one sock from every pair mysteriously vanished. Is there a sock thief lurking in my laundry room, or have they simply eloped with the dryer's missing socks?
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="card mb-4 bg-info">
+                      <div class="row">
+                        <div class="col-md-3 d-flex flex-column align-items-center justify-content-center"><img src="../images/profile_me_med.png" class="p-3 pb-0" alt="Profile Image" />
+                          <p class="text-center">StianL-82</p></div>
+                        <div class="card-body col-md-9 d-flex align-items-stretch">
+                          <div class="d-flex-column border border-dark rounded-2 m-2 bg-custom-light-grey">
+                            <h5 class="card-title mb-3 p-2">Grocery Store Gaffes: The Case of the Exploding Tomato Sauce</h5>
+                          <p class="card-text p-2">
+                            Went to grab a can of tomato sauce from the top shelf, but my klutzy hands had other plans. Now I'm stuck with a sticky mess and an aisle full of witnesses—cue the embarrassment
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mb-4 bg-info">
+                    <div class="row">
+                      <div class="col-md-3 d-flex flex-column align-items-center justify-content-center"><img src="../images/profile_me_med.png" class="p-3 pb-0" alt="Profile Image" />
+                        <p class="text-center">StianL-82</p></div>
+                      <div class="card-body col-md-9 d-flex align-items-stretch">
+                        <div class="d-flex-column border border-dark rounded-2 m-2 bg-custom-light-grey">
+                          <h5 class="card-title mb-3 p-2">Rainy Day Blues: The Umbrella Conundrum</h5>
+                        <p class="card-text p-2">
+                          Thought I was prepared for the rainy weather with my trusty umbrella, but turns out it's more hole than coverage. Now I'm stuck dodging raindrops like a ninja while my umbrella does its best impression of a sieve.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4 bg-info">
+                  <div class="row">
+                    <div class="col-md-3 d-flex flex-column align-items-center justify-content-center"><img src="../images/profile_me_med.png" class="p-3 pb-0" alt="Profile Image" />
+                      <p class="text-center">StianL-82</p></div>
+                      <div class="card-body col-md-9 d-flex align-items-stretch">
+                        <div class="d-flex-column border border-dark rounded-2 m-2 bg-custom-light-grey">
+                          <h5 class="card-title mb-3 p-2">Morning Mishaps: A Toasty Dilemma</h5>
+                        <p class="card-text p-2">
+                          Started my day by popping a slice of bread into the toaster, only to watch it get stuck mid-toast. Now I'm torn between trying to fish it out with a fork or waiting for it to magically reappear unburnt.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4 bg-info">
+                  <div class="row">
+                    <div class="col-md-3 d-flex flex-column align-items-center justify-content-center"><img src="../images/profile_me_med.png" class="p-3 pb-0" alt="Profile Image" />
+                      <p class="text-center">StianL-82</p></div>
+                      <div class="card-body col-md-9 d-flex align-items-stretch">
+                        <div class="d-flex-column border border-dark rounded-2 m-2 bg-custom-light-grey">
+                          <h5 class="card-title mb-3 p-2">Tech Troubles: The Case of the Vanishing Wi-Fi Signal</h5>
+                        <p class="card-text p-2">
+                          Sat down to binge-watch my favorite show, only to discover my Wi-Fi signal has decided to take an impromptu vacation. Now I'm left staring at a buffering screen and questioning my life choices—why do bad things happen to good Wi-Fi
+                        </p>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="card mb-4 bg-info">
+                  <div class="row">
+                    <div class="col-md-3 d-flex flex-column align-items-center justify-content-center"><img src="../images/profile_me_med.png" class="p-3 pb-0" alt="Profile Image" />
+                      <p class="text-center">StianL-82</p></div>
+                      <div class="card-body col-md-9 d-flex align-items-stretch">
+                        <div class="d-flex-column border border-dark rounded-2 m-2 bg-custom-light-grey">
+                          <h5 class="card-title mb-3 p-2">Monday Madness: The Great Coffee Spill</h5>
+                        <p class="card-text p-2">
+                          Started my week with a bang—or more accurately, a spill. Managed to knock over my freshly brewed coffee mug, turning my desk into a caffeine-infused swamp. Here's to hoping the rest of the day is less chaotic!
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4 bg-info">
+                  <div class="row">
+                    <div class="col-md-3 d-flex flex-column align-items-center justify-content-center"><img src="../images/profile_me_med.png" class="p-3 pb-0" alt="Profile Image" />
+                      <p class="text-center">StianL-82</p></div>
+                    <div class="card-body col-md-9 d-flex align-items-stretch">
+                      <div class="d-flex-column border border-dark rounded-2 m-2 bg-custom-light-grey">
+                        <h5 class="card-title mb-3 p-2">Kitchen Chronicles: The Quest for the Missing Tupperware Lids</h5>
+                      <p class="card-text p-2">
+                        Set out to meal prep like a responsible adult, only to realize that half of my Tupperware lids have mysteriously disappeared into the abyss. Looks like I'll be playing a game of mismatched containers for the foreseeable future!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="card mb-4 bg-info">
+                  <div class="row">
+                    <div class="col-md-3 d-flex flex-column align-items-center justify-content-center"><img src="../images/profile_me_med.png" class="p-3 pb-0" alt="Profile Image" />
+                      <p class="text-center">StianL-82</p></div>
+                      <div class="card-body col-md-9 d-flex align-items-stretch">
+                        <div class="d-flex-column border border-dark rounded-2 m-2 bg-custom-light-grey">
+                          <h5 class="card-title mb-3 p-2">Workday Woes: The Battle of the Never-Ending Email Chain</h5>
+                        <p class="card-text p-2">
+                          Thought I was making progress on my inbox, only to realize I've been sucked into a never-ending email chain that rivals the length of a Tolstoy novel. At this rate, I'll be sending my replies via carrier pigeon by the end of the day.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card mb-4 bg-info">
+                  <div class="row">
+                    <div class="col-md-3 d-flex flex-column align-items-center justify-content-center"><img src="../images/profile_me_med.png" class="p-3 pb-0" alt="Profile Image" />
+                      <p class="text-center">StianL-82</p></div>
+                      <div class="card-body col-md-9 d-flex align-items-stretch">
+                        <div class="d-flex-column border border-dark rounded-2 m-2 bg-custom-light-grey">
+                          <h5 class="card-title mb-3 p-2">Office Olympics: The Battle of the Broken Printer</h5>
+                        <p class="card-text p-2">
+                          Today's office Olympics event: fixing the printer. After a heroic attempt involving paper jams and ink cartridge acrobatics, I've come to the conclusion that the printer is possessed by a mischievous paper-eating gremlin.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    </main>
+    <footer class="footer bg-custom-grey d-flex justify-content-center align-items-center" style="height: 100px;">
+      <div class="text-center">
+        <span class="copyright text-white">© 2024 Stian Lilleng</span>
+      </div>
+    </footer>
   </body>
 </html>
