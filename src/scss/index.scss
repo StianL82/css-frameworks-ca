@@ -60,3 +60,9 @@ $theme-colors: (
   max-width: 50px;
   max-height: 50px;
 }
+
+.profile-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
