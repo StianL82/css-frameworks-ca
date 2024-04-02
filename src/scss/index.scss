@@ -11,7 +11,7 @@ $gray-900: #605D5D;
 $info: #D9D0BF;
 $dark: #303531;
 $info2: #A67F68;
-$success:green;
+$primary:green;
 $custom-grey: #605D5D;
 $custom-light-grey: #e6e5e5;
 $warning: #E4970B;
@@ -19,11 +19,11 @@ $warning: #E4970B;
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
-  "info":       $info,
-  "warning":    $warning,
-  "success":     $success,
-  "dark":       $dark,
-  "info2":      $info2,
+  "info":        $info,
+  "warning":     $warning,
+  "primary":     $primary,
+  "dark":        $dark,
+  "info2":       $info2,
   "custom-grey": $custom-grey,  
   "custom-light-grey": $custom-light-grey,
 );
