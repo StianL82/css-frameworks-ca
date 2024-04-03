@@ -1,6 +1,7 @@
 /*---------- My Google Fonts ----------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Satisfy&family=Shadows+Into+Light&display=swap');
 
 
 /*---------- My Changes to the Bootstrap CSS ----------*/
@@ -54,6 +55,15 @@ $container-max-widths: (
 
 .h1-logo{
   font-family: Pacifico, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.welcome-text{
+  font-family: Lora, Arial, Helvetica, sans-serif;
+}
+
+.userimage{
+  width: 50%;
 }
 
 .profile-pic, .card-img-top {
