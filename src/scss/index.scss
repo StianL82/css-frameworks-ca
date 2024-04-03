@@ -66,9 +66,9 @@ $container-max-widths: (
   width: 50%;
 }
 
-.profile-pic, .card-img-top {
+/* .profile-pic, .card-img-top {
   width: 60%;
-}
+} */
 
 .profile-picture{
   width: 80%;
@@ -79,8 +79,20 @@ $container-max-widths: (
   max-height: 50px;
 }
 
+.icon-small{
+  max-width: 30px;
+  max-height: 30px;
+  transition: transform 0.3s, filter 0.3s;
+  cursor: pointer;
+}
+
+.icon-small:hover {
+  transform: scale(1.1);
+}
+
 .profile-name {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+
