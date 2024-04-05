@@ -1,6 +1,6 @@
 /*---------- My Google Fonts ----------*/
 
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Satisfy&family=Shadows+Into+Light&display=swap');
 
 
@@ -8,7 +8,8 @@
 
 $gray-900: #605D5D;
 
-// scss-docs-start theme-color-variables
+$enable-gradients: true;
+
 $info: #D9D0BF;
 $dark: #303531;
 $info2: #A67F68;
@@ -16,9 +17,7 @@ $primary:green;
 $custom-grey: #605D5D;
 $custom-light-grey: #e6e5e5;
 $warning: #E4970B;
-// scss-docs-end theme-color-variables
 
-// scss-docs-start theme-colors-map
 $theme-colors: (
   "info":        $info,
   "warning":     $warning,
@@ -28,7 +27,6 @@ $theme-colors: (
   "custom-grey": $custom-grey,  
   "custom-light-grey": $custom-light-grey,
 );
-// scss-docs-end theme-colors-map
 
 $container-max-widths: (
   sm: 540px,
@@ -53,9 +51,13 @@ $container-max-widths: (
 
 /*---------- My custom CSS ----------*/
 
+.dropdown-toggle::after {
+  content: none;
+}
+
 .h1-logo{
-  font-family: Pacifico, Arial, Helvetica, sans-serif;
-  font-size: 2rem;
+  font-family: Bangers, Arial, Helvetica, sans-serif;
+  font-size: 3rem;
 }
 
 .welcome-text{
@@ -65,10 +67,6 @@ $container-max-widths: (
 .userimage{
   width: 50%;
 }
-
-/* .profile-pic, .card-img-top {
-  width: 60%;
-} */
 
 .profile-picture{
   width: 80%;
