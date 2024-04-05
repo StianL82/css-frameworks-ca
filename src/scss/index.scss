@@ -94,6 +94,11 @@ li {
   cursor: pointer;
 }
 
+.icon-xs{
+  max-width: 20px;
+  max-height: 20px;
+}
+
 .icon-small:hover {
   transform: scale(1.1);
 }
