@@ -17,10 +17,12 @@ $primary:green;
 $custom-grey: #605D5D;
 $custom-light-grey: #e6e5e5;
 $warning: #E4970B;
+$danger: #BF1D1D;
 
 $theme-colors: (
   "info":        $info,
   "warning":     $warning,
+  "danger":      $danger,
   "primary":     $primary,
   "dark":        $dark,
   "info2":       $info2,
@@ -55,9 +57,13 @@ $container-max-widths: (
   content: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 .h1-logo{
   font-family: Bangers, Arial, Helvetica, sans-serif;
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 .welcome-text{
@@ -70,6 +76,10 @@ $container-max-widths: (
 
 .profile-picture{
   width: 80%;
+}
+
+.profile-pic{
+  max-width: 15%;
 }
 
 .icon{
