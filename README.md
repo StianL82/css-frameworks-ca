@@ -33,7 +33,7 @@ Profile page (/profile/index.html)
 Clone the repo:
 
 ```
-git clone git@github.com/StianL82/css-frameworks-ca/tree/css-frameworks.git
+git clone git@github.com/StianL82/css-frameworks-ca.git
 ```
 
 ### Running
