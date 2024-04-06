@@ -4,7 +4,7 @@
 
 ![image](/images/readme/screencapture-stianl-css-frameworks-ca-netlify-app-feed-2024-04-06-18_23_22%201.png)
 
-Yhis was mye first meeting with CSS Frameworks 😄
+This was mye first meeting with CSS Frameworks 😄
 
 ## Visit the page at:
 
@@ -15,9 +15,9 @@ Yhis was mye first meeting with CSS Frameworks 😄
 The goal was to apply knowledge of Bootstrap and SASS to build a responsive front end for a social media application.
 We where tasked with creating 3 pages in HTML using Bootstrap and SASS:
 
-Authentication page (/index.html)
-Feed Page (/feed/index.html)
-Profile page (/profile/index.html)
+- Authentication page (/index.html)
+- Feed Page (/feed/index.html)
+- Profile page (/profile/index.html)
 
 ## Built With
 
@@ -38,8 +38,9 @@ git clone git@github.com/StianL82/css-frameworks-ca.git
 
 ### Running
 
-Run npm install and npm run dev. [Link to page](https://stianl-css-frameworks-ca.netlify.app/).
-(The live link only contains css and not JavaScript as we haven't learned how to do this properly yet.)
+To run the git version, you will have to use npm install and npm run dev.
+[Link to page](https://stianl-css-frameworks-ca.netlify.app/). kan be found here.
+(The live Netlify link only contains css and not JavaScript, as we haven't learned how to do this properly yet.)
 
 ### Contributing
 
