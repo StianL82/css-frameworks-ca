@@ -61,9 +61,9 @@ li {
   list-style-type: none;
 }
 
-.h1-logo{
+.h1-logo {
   font-family: Bangers, Arial, Helvetica, sans-serif;
-  font-size: 2.6rem;
+  font-size: clamp(1.6rem, 5vw, 3rem); /* Bruk clamp for dynamisk fontstørrelse */
 }
 
 .welcome-text{
@@ -120,4 +120,3 @@ li {
   border: 0;
   color: #e6e5e5;
 }
-
